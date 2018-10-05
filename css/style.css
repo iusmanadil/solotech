@@ -1,52 +1,57 @@
 /* primary-color: #094178 */
 /* Menu: #475766 */
-/* hero-text: #252425 */
+/* hero-text: #252425 & 60px */
 
 :root {
   --primary-color: #094178;
   --nav-color: #475766;
+  --heading-size: 48px;
 }
 
 @font-face {
   font-family: 'angelina';
-  src: url(angelina.TTF);
+  src: url(fonts/angelina.TTF);
 }
 @font-face {
-  font-family: 'code';
-  src: url(code-light.otf);
+  font-family: 'code-light';
+  src: url(fonts/code-light.otf);
 }
 @font-face {
-  font-family: 'bebas';
-  src: url(BebasNeue-Regular.ttf);
+  font-family: 'bebas-regular';
+  src: url(fonts/BebasNeueRegular.otf);
 }
 @font-face {
   font-family: 'bebas-book';
-  src: url(BebasNeueBook.ttf);
+  src: url(fonts/BebasNeueBook.ttf);
+}
+@font-face {
+  font-family: 'bebas-bold';
+  src: url(fonts/BebasNeueBold.otf);
+}
+@font-face {
+  font-family: 'bebas-light';
+  src: url(fonts/BebasNeueLight.otf);
 }
 @font-face {
   font-family: 'azo-black';
-  src: url(AzoSans-Black.otf);
-}
-@font-face {
-  font-family: 'azo-regular';
-  src: url(AzoSans-Regular.otf);
-}
-@font-face {
-  font-family: 'azo-medium';
-  src: url(AzoSans-Medium.otf);
-}
-@font-face {
-  font-family: 'azo-bold';
-  src: url(AzoSans-Bold.otf);
+  src: url(fonts/AzoSans-Black.otf);
 }
 @font-face {
   font-family: 'proxima';
-  src: url(Proxima-Nova-Thin.ttf);
+  src: url(fonts/Proxima-Nova-Thin.ttf);
+}
+@font-face {
+  font-family: 'ostrich';
+  src: url(fonts/OstrichSans-Bold.otf);
 }
 
 
 .bd {
   border: 2px solid red;
+}
+
+header {
+  padding-top: 20px;
 }
 
 .bg-img {
@@ -57,6 +62,13 @@
   height: 760px;
 }
 
+
+/* Navbar */
+.navbar .nav-link {
+  text-transform: uppercase;
+  color: var(--nav-color)!important;
+  font-family: ostrich;
+}
 
 
 /* **************************** */
@@ -76,16 +88,67 @@
   font-size: 60px;
   font-family: bebas-book;
   line-height: 1;
+  letter-spacing: 1px;
 }
 
 .hero-1 .heading-2 {
   font-size: 30px;
   font-family: azo-black;
-  /* color: #094178; */
 }
 
 .hero-1 .heading-3 {
   font-size: 24px;
-  font-family: code;
+  font-family: code-light;
+  font-weight: bold;
   line-height: 0.5;
+}
+
+
+.hero-2 {
+  /* border: 2px solid blue; */
+  margin-top: 50px;
+}
+
+.hero-2 .heading-1 {
+  font-size: 60px;
+  font-family: bebas-regular;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.hero-2 .input-group {
+  width: 550px;
+}
+
+.hero-2 .form-control {
+  border: none;
+  background: transparent;
+  border-bottom: 3px solid #000;
+}
+.hero-2 .form-control:focus {
+  outline: none !important;
+}
+
+.form-control::placeholder {
+  font-size: 36px;
+  font-family: bebas-regular;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #94908c;
+}
+
+.fa-chevron-down {
+  position: relative;
+  right: 50px;
+}
+
+.hero-2 .input-group-text {
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 50% !important;
+  padding: 10px 13px;
+}
+
+.hero-2 .fas {
+  color: #000;
 }
