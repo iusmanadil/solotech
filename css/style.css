@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'angelina';
+  src: url(angelina.TTF);
+}
+@font-face {
+  font-family: 'code';
+  src: url(code-light.otf);
+}
+@font-face {
+  font-family: 'bebas';
+  src: url(BebasNeue-Regular.ttf);
+}
+
+.bd {
+  border: 2px solid #000;
+}
