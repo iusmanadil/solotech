@@ -12,5 +12,13 @@
 }
 
 .bd {
-  border: 2px solid #000;
+  border: 2px solid red;
+}
+
+.bg-img {
+  background-image: url('../img/hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
