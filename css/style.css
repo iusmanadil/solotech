@@ -5,6 +5,7 @@
 :root {
   --primary-color: #094178;
   --nav-color: #475766;
+  --sec-bg: #e7e8ed;
   --heading-size: 48px;
 }
 
@@ -114,6 +115,7 @@ header {
   font-family: bebas-regular;
   font-weight: bold;
   letter-spacing: 4px;
+  margin: 5px 0;
 }
 
 .hero-2 .input-group {
@@ -151,4 +153,22 @@ header {
 
 .hero-2 .fas {
   color: #000;
+}
+
+.hero-2 .btns-store {
+  margin-top: 10px;
+}
+
+
+
+
+
+/* ******* Sec - 2 ******** */
+.sec-2 {
+  background: var(--sec-bg);
+  padding: 60px 30px;
+}
+
+.text {
+  background: #fff;
 }
