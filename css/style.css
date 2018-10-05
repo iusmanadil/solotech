@@ -6,7 +6,7 @@
   --primary-color: #094178;
   --nav-color: #475766;
   --sec-bg: #e7e8ed;
-  --heading-size: 48px;
+  --primary-heading-size: 48px;
 }
 
 @font-face {
@@ -171,4 +171,14 @@ header {
 
 .text {
   background: #fff;
+  padding: 20px 40px;
+  margin-top: 10px;
+  position: relative;
+  right: 140px;
+  width: 130%;
+}
+
+.text h2 {
+  font-size: var(--primary-heading-size);
+  font-family: bebas-bold;
 }
