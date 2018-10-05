@@ -1,3 +1,12 @@
+/* primary-color: #094178 */
+/* Menu: #475766 */
+/* hero-text: #252425 */
+
+:root {
+  --primary-color: #094178;
+  --nav-color: #475766;
+}
+
 @font-face {
   font-family: 'angelina';
   src: url(angelina.TTF);
@@ -10,6 +19,31 @@
   font-family: 'bebas';
   src: url(BebasNeue-Regular.ttf);
 }
+@font-face {
+  font-family: 'bebas-book';
+  src: url(BebasNeueBook.ttf);
+}
+@font-face {
+  font-family: 'azo-black';
+  src: url(AzoSans-Black.otf);
+}
+@font-face {
+  font-family: 'azo-regular';
+  src: url(AzoSans-Regular.otf);
+}
+@font-face {
+  font-family: 'azo-medium';
+  src: url(AzoSans-Medium.otf);
+}
+@font-face {
+  font-family: 'azo-bold';
+  src: url(AzoSans-Bold.otf);
+}
+@font-face {
+  font-family: 'proxima';
+  src: url(Proxima-Nova-Thin.ttf);
+}
+
 
 .bd {
   border: 2px solid red;
@@ -19,6 +53,39 @@
   background-image: url('../img/hero.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  height: 100vh;
+  background-position: top center;
+  height: 760px;
+}
+
+
+
+/* **************************** */
+/* Hero Text */
+
+.hero-text {
+  /* border: 2px solid #000; */
+  text-transform: uppercase;
+}
+
+.hero-1 {
+  /* border: 2px solid blue; */
+  color: var(--primary-color);
+}
+
+.hero-1 .heading-1 {
+  font-size: 60px;
+  font-family: bebas-book;
+  line-height: 1;
+}
+
+.hero-1 .heading-2 {
+  font-size: 30px;
+  font-family: azo-black;
+  /* color: #094178; */
+}
+
+.hero-1 .heading-3 {
+  font-size: 24px;
+  font-family: code;
+  line-height: 0.5;
 }
