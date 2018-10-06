@@ -138,6 +138,7 @@ header {
 /* logo text */
 .hero-1 .heading-1 {
   font-size: 6rem;
+  font-weight: bold;
   font-family: bebas-book;
   line-height: 1;
   letter-spacing: 0.1rem;
