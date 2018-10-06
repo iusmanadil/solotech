@@ -43,12 +43,21 @@ html {
   font-size: 10px;
 }
 
+/* @media (min-width: 1200px) {
+
+} */
+
 body {
   --primary-color: #094178;
   --secondary-color: #b3392c;
   --nav-color: #475766;
   --sec-bg: #e7e8ed;
   --primary-heading-size: 4.8rem;
+}
+
+.navbar-light .navbar-toggler {
+  color: #475766;
+  border: 0;
 }
 
 .bd {
@@ -117,6 +126,7 @@ header {
 
 .hero-text {
   /* border: 2px solid #000; */
+  padding-top: 5px;
   text-transform: uppercase;
 }
 
@@ -131,6 +141,7 @@ header {
   font-family: bebas-book;
   line-height: 1;
   letter-spacing: 0.1rem;
+  /* border: 1px solid #000; */
 }
 
 .hero-1 .heading-2 {
@@ -144,7 +155,6 @@ header {
   font-weight: bold;
   line-height: 0.5;
 }
-
 
 .hero-2 {
   /* border: 2px solid blue; */
@@ -167,9 +177,8 @@ header {
   border: none;
   background: transparent;
   border-bottom: 3px solid #000;
-}
-.hero-2 .form-control:focus {
-  outline: none !important;
+  font-size: 2.5rem;
+  padding: 5px 10px;
 }
 
 header .form-control::placeholder {
@@ -183,6 +192,7 @@ header .form-control::placeholder {
 .fa-chevron-down {
   position: relative;
   right: 5rem;
+  top: 2rem;
 }
 
 .hero-2 .input-group-text {
@@ -194,13 +204,87 @@ header .form-control::placeholder {
 
 .hero-2 .fas {
   color: #000;
+  font-size: 2rem;
 }
 
 .hero-2 .btns-store {
   margin-top: 1rem;
 }
 
+.btns-store a {
+  display: inline-block;
+}
 
+@media (max-width: 767.98px) {
+  .hero-1 .heading-1 {
+    font-size: 5rem;
+  }
+  .hero-1 .heading-2 {
+    font-size: 2.2rem;
+  }
+
+  .hero-2 .heading-1 {
+    font-size: 4.5rem;
+    letter-spacing: 0.2rem;
+  }
+  .hero-2 .input-group {
+    width: 40rem;
+  }
+  header .form-control::placeholder {
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+  }
+  .fa-chevron-down {
+    top: 2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .bg-img {
+    height: 55rem;
+  }
+  .hero-1 .heading-1 {
+    font-size: 4rem;
+  }
+  .hero-1 .heading-2 {
+    font-size: 1.8rem;
+  }
+  .hero-1 .heading-3 {
+    font-size: 1.6rem;
+    line-height: 0.7;
+  }
+
+  .hero-2 {
+    /* border: 2px solid blue; */
+    margin-top: 4rem;
+  }
+  .hero-2 .heading-1 {
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+  }
+  .hero-2 .input-group {
+    width: 30rem;
+  }
+  .hero-2 .form-control {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+  }
+  .hero-2 .form-control::placeholder {
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+  }
+  .fa-chevron-down {
+    top: 10px;
+    right: 3.5rem;
+  }
+  .hero-2 .input-group-text {
+    border-radius: 50% !important;
+    padding: 0.8rem 1.1rem;
+  }
+  .hero-2 .fas {
+    font-size: 1.5rem;
+  }
+}
 
 
 /* ******* Sec - 2 ******** */
@@ -555,6 +639,12 @@ header .form-control::placeholder {
   line-height: 1.2rem;
 }
 
+.sec-5 ul li {
+  font-family: bebas-book;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #475766;
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -564,6 +654,10 @@ header .form-control::placeholder {
   .sec-5 h3 {
     font-size: 2rem;
   }
+  .sec-5 ul li {
+    font-size: 1.4rem;
+  }
+  
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -573,6 +667,9 @@ header .form-control::placeholder {
   }
   .sec-5 h3 {
     font-size: 2.7rem;
+  }
+  .sec-5 ul li {
+    font-size: 1.5rem;
   }
 }
 
@@ -585,13 +682,10 @@ header .form-control::placeholder {
     font-size: 3rem;
   }
 
-}
+  .sec-5 ul li {
+    font-size: 1.6rem;
+  }
 
-.sec-5 ul li {
-  font-family: bebas-book;
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: #475766;
 }
 
 .sec-5 .img-row {
@@ -691,4 +785,42 @@ header .form-control::placeholder {
 }
 
 
+footer {
+  padding: 25px 0 15px;
+}
 
+footer h3 {
+  font-family: bebas-regular;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer a {
+  display: inline-block;
+  font-family: bebas-light;
+  font-weight: bold;
+  color: #000;
+}
+footer a:hover {
+  color: #000;
+  text-decoration: none;
+} 
+
+footer li a {
+  font-size: 2.4rem;
+}
+
+footer nav a {
+  display: inline-block;
+  font-size: 1.6rem;
+}
+
+footer p {
+  font-size: 1.6rem;
+  font-family: bebas-light;
+  font-weight: bold;
+}
