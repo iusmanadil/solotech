@@ -56,7 +56,13 @@ body {
 }
 
 .no-pad {
-  padding: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.no-mar { 
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .no-ul {
@@ -600,7 +606,12 @@ header .form-control::placeholder {
 
 .sec-6 .right-col {
   /* border: 2px solid blue; */
-  padding: 30px 0;
+  padding: 30px 0 20px;
+}
+
+.right-col > .row:nth-child(3) {
+  /* border: 2px solid #000; */
+  margin-top: 30px;
 }
 
 .sec-6 h2 {
@@ -620,13 +631,33 @@ header .form-control::placeholder {
   /* width: 100%; */
 }
 
+.sec-6 ul li {
+  font-family: bebas-book;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .img-wrapper {
+    /* border: 3px solid cyan; */
+    text-align: center;
+  }
+
+  .right-col .row:last-child {
+    /* border: 3px solid silver; */
+    text-align: center;
+  }
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .sec-6 h2 {
-    font-size: 3rem;
+    font-size: 2.9rem;
   }
   .sec-6 h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -636,7 +667,11 @@ header .form-control::placeholder {
     font-size: 3.8rem;
   }
   .sec-6 h3 {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
+  }
+
+  .sec-6 ul li {
+    font-size: 1.6rem;
   }
 }
 
@@ -649,10 +684,11 @@ header .form-control::placeholder {
     font-size: 3rem;
   }
 
+  .sec-6 ul li {
+    font-size: 1.6rem;
+  }
+
 }
 
-.sec-6 ul li {
-  font-family: bebas-book;
-  font-size: 1.6rem;
-  font-weight: bold;
-}
+
+
