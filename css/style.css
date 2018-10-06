@@ -153,6 +153,7 @@ header {
 .hero-1 .heading-3 {
   font-size: 2.4rem;
   font-family: code-light;
+  letter-spacing: 0.1rem;
   font-weight: bold;
   line-height: 0.5;
 }
@@ -552,8 +553,8 @@ header .form-control::placeholder {
  }
 
  .sec-4 .form-control::placeholder {
-  font-size: 1.6rem;
-  font-family: bebas-regular;
+  font-size: 1.4rem;
+  font-family: arial;
   color: #757575;
   letter-spacing: 0.2rem;
   padding: 10px;
